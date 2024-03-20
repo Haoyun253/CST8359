@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <h2>Haoyun Deng. Welcome to my Web page!</h2>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Show the song!", "SongForm", "Home")
+        @Html.ActionLink("Students", "CreateStudent", "Home")
+    </header>
+    <div style="min-height: 40vh;">
+        @RenderBody()
+    </div>
+    <footer>
+        <ul>
+            <li>CSS stylesheets are created under wwwroot/css and included in _Layout to ensure overall consistency throughout the web application.</li>
+            <li>_Layout contains all recurring elements of the view and is incorporated into each view of the web application by incorporating the layout definition from _ViewStart.cshtml.</li>
+            <li>Layouts allow us to use the contents of a view multiple times without having to specify them repeatedly on every page</li>
+            <li>Having these files in separate files means that changes to one file do not interfere with the contents of the other file, making it easier to modify and troubleshoot when errors occur.</li>
+            <li>The layout is placed in the Vies/Shared directory because the layout is applied to all views and therefore needs to be accessed by all views.</li>
+            <li>All views are placed in the Views/Home directory because the program searches in the Views/Home directory when calling a view</li>
+        </ul>
+    </footer>
+</body>
+</html>

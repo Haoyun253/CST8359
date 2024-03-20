@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "secrets2": {
+      "restored": true,
+      "restoreTime": "2024-03-19T21:03:29.3604012Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-03-20T05:33:12.8805444Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2024-03-19T21:02:28.4134048Z"
+    },
+    "storage1": {
+      "restored": true,
+      "restoreTime": "2024-03-20T01:22:08.3657105Z"
+    },
+    "sqlite1": {
+      "restored": true,
+      "restoreTime": "2024-03-19T20:59:45.981353Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "970a25bc-80ad-48a9-8fd5-5c4af407f40a"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "haoyunlab4"
+    },
+    "storage1.resourceGroupName": {
+      "Name": "storage1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "haoyunlab5"
+    },
+    "storage1.subscriptionId": {
+      "Name": "storage1.subscriptionId",
+      "Type": "subscription",
+      "Value": "970a25bc-80ad-48a9-8fd5-5c4af407f40a"
+    }
+  }
+}

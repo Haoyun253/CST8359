@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Sing";
+    var monkeys = (int)ViewData["monkeys"];
+}
+
+@if (monkeys == 0)
+{
+    <p>No more monkeys jumping on the bed!</p>
+}
+else
+{
+    @for (int i = monkeys; i >= 0; i--)
+    {
+        
+            @if (i == 0)
+            {
+                <p>No little monkeys jumping on the bed,</p>
+                <p>None fell off and bumped their head,</p>
+                <p>Mama called the doctor and the doctor said,</p>
+                <p>"Put those monkeys back in bed!"</p>
+            }
+            else
+            {
+                String mon = "monkeys";
+                String sex1 = "his";
+                String sex2 = "he";
+
+                if (i == 1)
+                {
+                    mon = "monkey";
+                }
+                if (i % 2 == 0)
+                {
+                     sex1 = "her";
+                     sex2 = "she";
+
+                }
+                <p>@i.ToString() little @mon jumping on the bed,</p>
+                <p> @sex2 fell off and bumped @sex1 head,</p>
+                <p> Mama called the doctor and the doctor said,</p>
+                <p> "No more monkeys jumping on the bed!"</p>
+
+            }
+        <br>
+    }
+ 
+}
+
+<form asp-controller="Home" asp-action="SongForm" method="post">
+    <input type="submit" value="Playagain">
+</form>
