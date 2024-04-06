@@ -7,7 +7,8 @@ namespace Lab6.Models
 {
     public class Student
     {
-
+        [Display(Name = "ID")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [SwaggerSchema(ReadOnly = true)]
         public Guid Id { get; set; }
 
